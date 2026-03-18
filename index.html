@@ -1,148 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLOVER HOME MARBLES AND GRANITE LTD.</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff8e1;
-            color: #333;
-        }
-        header img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        h2 {
-            color: #b8860b;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .gallery img {
-            width: calc(50% - 10px);
-            height: auto;
-            object-fit: cover;
-        }
-        form {
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-        form input, form select, form button {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-        }
-        .checkbox-group {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-        .contact-buttons {
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        .contact-buttons a {
-            text-decoration: none;
-            padding: 10px 15px;
-            background-color: #b8860b;
-            color: white;
-            border-radius: 5px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLOVER HOME MARBLES AND GRANITE LTD.</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f5f1;
+  }
+  header img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  h2 {
+    color: #b8860b;
+  }
+  .info, .form-container, .gallery {
+    margin-bottom: 40px;
+  }
+  .info ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .info li {
+    margin-bottom: 8px;
+  }
+  .form-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    background: #fff8dc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  }
+  .form-container form input, 
+  .form-container form select, 
+  .form-container form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  .form-container form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  .form-container form .full-width {
+    grid-column: 1 / -1;
+  }
+  .form-container form .products-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-container form .products-services label {
+    font-weight: normal;
+  }
+  .form-container form button {
+    background-color: #b8860b;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .buttons a {
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  .buttons a.email {
+    background-color: #b8860b;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+</style>
 </head>
 <body>
 
 <header>
-    <img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED/30f1a1995526d0ad2426a7cf9277c63e08bf71cd/Screenshot_20260318-151527.jpg" alt="Clover Home Marbles and Granite Ltd">
+  <img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED/30f1a1995526d0ad2426a7cf9277c63e08bf71cd/Screenshot_20260318-151527.jpg" alt="CLOVER HOME MARBLES AND GRANITE LTD Header">
 </header>
 
 <div class="container">
-    <h2>CLOVER HOME MARBLES AND GRANITES LTD.</h2>
-    <p><strong>RC NO:</strong> 8344242</p>
-    
-    <h3>Product Description</h3>
+
+  <section class="info">
+    <h2>Company Name</h2>
+    <p><strong>CLOVER HOME MARBLES AND GRANITES LTD.</strong> RC NO: 8344242</p>
+
+    <h2>Product Description</h2>
     <p>Marbles and Granites Slab/Floor Tiles Supplier</p>
-    
-    <h3>Services</h3>
-    <ul>
-        <li>Marbles/Granites Slab & Floor Tiles</li>
-        <li>Kitchen Counter-tops</li>
-        <li>Staircase</li>
-        <li>Tombstone</li>
-        <li>Write-ups</li>
-        <li>Pulpit</li>
-        <li>General Contractors</li>
-    </ul>
-    
-    <h3>Benefits</h3>
-    <ul>
-        <li>Quality Products</li>
-        <li>Excellent Service</li>
-    </ul>
-    
-    <h3>Contact Information</h3>
-    <p><strong>Location:</strong> Besides National Block Industry, Along Benin/Onitsha Express Way, Bonsaac, Asaba, Delta State.</p>
-    <p><strong>Phone Numbers:</strong> +234 913 281 3864, +234 916 317 8828</p>
-    <p><strong>Email:</strong> cloverhome102@gmail.com</p>
-    
-    <div class="gallery">
-        <img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED/ad39ffd9aa6623e880f24cd919c5eceb84a30b4f/images%20(61).jpeg" alt="Gallery Image">
-        <img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED/ad39ffd9aa6623e880f24cd919c5eceb84a30b4f/images%20(58).jpeg" alt="Gallery Image">
-        <img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED/ad39ffd9aa6623e880f24cd919c5eceb84a30b4f/images%20(57).jpeg" alt="Gallery Image">
-        <img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED/ad39ffd9aa6623e880f24cd919c5eceb84a30b4f/4cae8446d4a4cd08325eb4eff5ff8a45.jpg" alt="Gallery Image">
-        <!-- Add the rest of your gallery images here in the same format -->
-    </div>
 
-    <form action="#" onsubmit="return submitForm();">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="tel" name="phone" placeholder="Phone Number" required>
-        <input type="text" name="location" placeholder="Location" required>
-        <select name="delivery" required>
-            <option value="">Coming for goods or Home delivery?</option>
-            <option value="pickup">Pickup</option>
-            <option value="home_delivery">Home Delivery</option>
+    <h2>Services</h2>
+    <ul>
+      <li>Marbles/Granites Slab & Floor Tiles</li>
+      <li>Kitchen Counter-tops</li>
+      <li>Staircase</li>
+      <li>Tombstone</li>
+      <li>Write-ups</li>
+      <li>Pulpit</li>
+      <li>General Contractors</li>
+    </ul>
+
+    <h2>Benefits</h2>
+    <ul>
+      <li>Quality Products</li>
+      <li>Excellent Service</li>
+    </ul>
+
+    <h2>Contact Information</h2>
+    <ul>
+      <li><strong>Location:</strong> Besides National Block Industry, Along Benin/Onitsha Express Way, Bonsaac, Asaba, Delta State.</li>
+      <li><strong>Phone:</strong> +234 913 281 3864, +234 916 317 8828</li>
+      <li><strong>Email:</strong> cloverhome102@gmail.com</li>
+    </ul>
+  </section>
+
+  <section class="form-container">
+    <h2>Customer Order Form</h2>
+    <form id="orderForm">
+      <div class="full-width">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" required>
+      </div>
+      <div>
+        <label for="location">Location</label>
+        <input type="text" id="location" required>
+      </div>
+      <div>
+        <label for="delivery">Coming for goods or Home delivery</label>
+        <select id="delivery">
+          <option value="goods">Coming for goods</option>
+          <option value="home">Home delivery</option>
         </select>
-        
-        <div class="checkbox-group">
-            <label><input type="checkbox" name="services" value="Marbles/Granites Slab & Floor Tiles"> Marbles/Granites Slab & Floor Tiles</label>
-            <label><input type="checkbox" name="services" value="Kitchen Counter-tops"> Kitchen Counter-tops</label>
-            <label><input type="checkbox" name="services" value="Staircase"> Staircase</label>
-            <label><input type="checkbox" name="services" value="Tombstone"> Tombstone</label>
-            <label><input type="checkbox" name="services" value="Write-ups"> Write-ups</label>
-            <label><input type="checkbox" name="services" value="Pulpit"> Pulpit</label>
-            <label><input type="checkbox" name="services" value="General Contractors"> General Contractors</label>
-        </div>
-
+      </div>
+      <div class="full-width products-services">
+        <label><input type="checkbox" value="Marbles/Granites Slab & Floor Tiles"> Marbles/Granites Slab & Floor Tiles</label>
+        <label><input type="checkbox" value="Kitchen Counter-tops"> Kitchen Counter-tops</label>
+        <label><input type="checkbox" value="Staircase"> Staircase</label>
+        <label><input type="checkbox" value="Tombstone"> Tombstone</label>
+        <label><input type="checkbox" value="Write-ups"> Write-ups</label>
+        <label><input type="checkbox" value="Pulpit"> Pulpit</label>
+        <label><input type="checkbox" value="General Contractors"> General Contractors</label>
+      </div>
+      <div class="full-width">
         <button type="submit">Submit</button>
+      </div>
     </form>
 
-    <div class="contact-buttons">
-        <a href="https://wa.me/2349132813864?text=Hello%20CLOVER%20HOME%20MARBLES%20AND%20GRANITE%20LTD.,%20I%20am%20interested%20in%20your%20products%20and%20services." target="_blank">WhatsApp</a>
-        <a href="mailto:cloverhome102@gmail.com">Email</a>
+    <div class="buttons">
+      <a href="https://wa.me/2349132813864?text=Hello!%20I%20would%20like%20to%20place%20an%20order%20for%20CLOVER%20HOME%20MARBLES%20AND%20GRANITE%20products." target="_blank">WhatsApp</a>
+      <a href="mailto:cloverhome102@gmail.com" class="email">Email</a>
     </div>
+  </section>
+
+  <section class="gallery">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125024.jpg" alt="Gallery Image 1">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125050.jpg" alt="Gallery Image 2">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125100.jpg" alt="Gallery Image 3">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125148.jpg" alt="Gallery Image 4">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125317.jpg" alt="Gallery Image 5">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125347.jpg" alt="Gallery Image 6">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125410.jpg" alt="Gallery Image 7">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125516.jpg" alt="Gallery Image 8">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125605.jpg" alt="Gallery Image 9">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125640.jpg" alt="Gallery Image 10">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130003.jpg" alt="Gallery Image 11">
+    <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130020.jpg" alt="Gallery Image 12">
+  </section>
+
 </div>
 
 <script>
-    function submitForm() {
-        alert("Thank you for contacting CLOVER HOME MARBLES AND GRANITE LTD. We will get back to you soon!");
-        return false; // prevent actual submission for demo
-    }
+document.getElementById('orderForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert("Thank you! Your order has been submitted successfully.");
+});
 </script>
 
 </body>
