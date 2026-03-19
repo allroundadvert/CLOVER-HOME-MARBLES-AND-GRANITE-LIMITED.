@@ -97,7 +97,7 @@ button, .whatsapp-btn{
 
 <!-- HEADER -->
 <div class="header">
-<img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED./30f1a1995526d0ad2426a7cf9277c63e08bf71cd/Screenshot_20260318-151527.jpg" alt="Clover Home Marbles Header">
+<img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED./30f1a1995526d0ad2426a7cf9277c63e08bf71cd/Screenshot_20260318-151527.jpg">
 </div>
 
 <div class="container">
@@ -128,7 +128,6 @@ button, .whatsapp-btn{
 <h2>Gallery</h2>
 <div class="gallery">
 
-<!-- ALL IMAGES -->
 <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125024.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125050.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125100.jpg">
@@ -173,7 +172,7 @@ button, .whatsapp-btn{
 
 </form>
 
-<!-- MAP SECTION -->
+<!-- MAP -->
 <div class="map">
 <h2>Our Location</h2>
 <iframe 
@@ -195,12 +194,15 @@ function sendToWhatsApp(){
     let selected = [];
     services.forEach(s => selected.push(s.value));
 
-    let message = `Hello CLOVER HOME MARBLES,%0A
-Name: ${name}%0A
-Phone: ${phone}%0A
-Location: ${location}%0A
-Request: ${delivery}%0A
-Services: ${selected.join(", ")}`;
+    let message = `Hello CLOVER HOME MARBLES AND GRANITES LTD.%0A%0A
+I would like to make an inquiry/order with the following details:%0A%0A
+👤 Name: ${name}%0A
+📞 Phone: ${phone}%0A
+📍 Location: ${location}%0A
+🚚 Request Type: ${delivery}%0A%0A
+🛠 Selected Services:%0A${selected.join(", ")}%0A%0A
+Please provide price, availability, and next steps.%0A
+Thank you.`;
 
     window.open(`https://wa.me/2349132813864?text=${message}`, "_blank");
 }
