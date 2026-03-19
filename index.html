@@ -17,8 +17,8 @@ body{
 /* HEADER */
 .header img{
     width:100%;
-    height:400px;
-    object-fit:cover;
+    height:100vh; /* FULL SCREEN HEIGHT */
+    object-fit:cover; /* FIT WITHOUT DISTORTION */
 }
 
 /* CONTENT */
@@ -81,6 +81,19 @@ button{
     cursor:pointer;
 }
 
+/* WHATSAPP BUTTON */
+.whatsapp-btn{
+    display:block;
+    margin-top:15px;
+    padding:12px;
+    background:#25D366;
+    color:white;
+    text-align:center;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
 /* MAP */
 .map{
     margin-top:30px;
@@ -123,9 +136,6 @@ button{
 <h2>Gallery</h2>
 <div class="gallery">
 
-<!-- EXISTING IMAGES (unchanged) -->
-
-<!-- NEW ADDED IMAGES -->
 <img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED./9457795ff746a14cb6a407cd61c950a9be8d2379/4cae8446d4a4cd08325eb4eff5ff8a45.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED./9457795ff746a14cb6a407cd61c950a9be8d2379/images%20(57).jpeg">
 <img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED./9457795ff746a14cb6a407cd61c950a9be8d2379/images%20(58).jpeg">
@@ -159,9 +169,15 @@ button{
 </div>
 
 <button type="submit">Submit</button>
+
 </form>
 
-<!-- MAP SECTION (ADDED) -->
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp-btn" href="https://wa.me/2349132813864" target="_blank">
+Chat on WhatsApp
+</a>
+
+<!-- MAP SECTION -->
 <div class="map">
 <h2>Our Location</h2>
 <iframe 
