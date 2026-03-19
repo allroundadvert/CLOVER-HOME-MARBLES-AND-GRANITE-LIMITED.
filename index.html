@@ -17,8 +17,9 @@ body{
 /* HEADER */
 .header img{
     width:100%;
-    height:100vh; /* FULL SCREEN HEIGHT */
-    object-fit:cover; /* FIT WITHOUT DISTORTION */
+    height:auto;
+    display:block;
+    margin:0 auto;
 }
 
 /* CONTENT */
@@ -51,7 +52,7 @@ form{
 
 .input-group{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
     gap:10px;
 }
 
@@ -70,7 +71,7 @@ input,select{
 }
 
 /* BUTTON */
-button{
+button, .whatsapp-btn{
     margin-top:15px;
     padding:12px;
     width:100%;
@@ -79,19 +80,10 @@ button{
     font-weight:bold;
     border-radius:6px;
     cursor:pointer;
-}
-
-/* WHATSAPP BUTTON */
-.whatsapp-btn{
-    display:block;
-    margin-top:15px;
-    padding:12px;
-    background:#25D366;
-    color:white;
     text-align:center;
-    border-radius:6px;
     text-decoration:none;
-    font-weight:bold;
+    color:#000;
+    display:block;
 }
 
 /* MAP */
@@ -105,7 +97,7 @@ button{
 
 <!-- HEADER -->
 <div class="header">
-<img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED./30f1a1995526d0ad2426a7cf9277c63e08bf71cd/Screenshot_20260318-151527.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED./30f1a1995526d0ad2426a7cf9277c63e08bf71cd/Screenshot_20260318-151527.jpg" alt="Clover Home Marbles Header">
 </div>
 
 <div class="container">
@@ -136,11 +128,19 @@ button{
 <h2>Gallery</h2>
 <div class="gallery">
 
-<img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED./9457795ff746a14cb6a407cd61c950a9be8d2379/4cae8446d4a4cd08325eb4eff5ff8a45.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED./9457795ff746a14cb6a407cd61c950a9be8d2379/images%20(57).jpeg">
-<img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED./9457795ff746a14cb6a407cd61c950a9be8d2379/images%20(58).jpeg">
-<img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED./9457795ff746a14cb6a407cd61c950a9be8d2379/images%20(64).jpeg">
-<img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED./9457795ff746a14cb6a407cd61c950a9be8d2379/images%20(56).jpeg">
+<!-- ALL IMAGES -->
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125024.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125050.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125100.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125148.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125317.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125347.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125410.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125516.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125605.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125640.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130003.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130020.jpg">
 
 </div>
 
@@ -169,13 +169,9 @@ button{
 </div>
 
 <button type="submit">Submit</button>
+<a class="whatsapp-btn" href="https://wa.me/2349132813864" target="_blank">WhatsApp Us: +2349132813864</a>
 
 </form>
-
-<!-- WHATSAPP BUTTON -->
-<a class="whatsapp-btn" href="https://wa.me/2349132813864" target="_blank">
-Chat on WhatsApp
-</a>
 
 <!-- MAP SECTION -->
 <div class="map">
