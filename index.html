@@ -194,17 +194,25 @@ function sendToWhatsApp(){
     let selected = [];
     services.forEach(s => selected.push(s.value));
 
-    let message = `Hello CLOVER HOME MARBLES AND GRANITES LTD.%0A%0A
-I would like to make an inquiry/order with the following details:%0A%0A
-👤 Name: ${name}%0A
-📞 Phone: ${phone}%0A
-📍 Location: ${location}%0A
-🚚 Request Type: ${delivery}%0A%0A
-🛠 Selected Services:%0A${selected.join(", ")}%0A%0A
-Please provide price, availability, and next steps.%0A
+    let message = 
+`Hello CLOVER HOME MARBLES AND GRANITES LTD.
+
+I would like to make an inquiry/order with the following details:
+
+Name: ${name}
+Phone: ${phone}
+Location: ${location}
+Request Type: ${delivery}
+
+Selected Services:
+${selected.join(", ")}
+
+Please provide price, availability, and next steps.
 Thank you.`;
 
-    window.open(`https://wa.me/2349132813864?text=${message}`, "_blank");
+    let encodedMessage = encodeURIComponent(message);
+
+    window.open(`https://wa.me/2349132813864?text=${encodedMessage}`, "_blank");
 }
 </script>
 
